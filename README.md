@@ -1,4 +1,4 @@
-# Zmienne złożone – struktury i unie.
+# Zmienne złożone – struktury i unie
 ## **Struktury**
 Zmienną złożoną, którą zdecydowanie warto znać jest struktura. Budowanie struktur pozwala nam łączyć ze sobą różne zmienne w spójny obiekt. Daje nam to możliwość logicznego powiązania wielu zmiennych. Ułatwia to tworzenie programów, wewnątrz których wykorzystujemy wiele zmiennych definiujących ten sam obiekt. Przykładem takiego obiektu może być punkt. Aby zdefiniować punkt w dwuwymiarowym układzie współrzędnych, potrzebujemy znać poszczególne współrzędne punktu. Struktura pozwoli nam je połączyć logicznie w jedną strukturę. Aby zadeklarować taką strukturę, należy zacząć od podania słowa kluczowego *struct* oraz nadania identyfikatora (nazwy). W naszym przypadku za identyfikator przyjmiemy słowo „punkt”. Następnie otwieramy nawias klamrowy, deklarujemy zmienne składowe, a całość zamykamy średnikiem.  
 
