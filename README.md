@@ -134,8 +134,8 @@ enum COLORS{
 	COL_WHITE=0,		/* COL_WHITE = 0*/
 	COL_RED=1,		/* COL_RED = 1*/
 	COL_BLUE=2,		/* COL_BLUE = 2*/
-	COL_YELLOW=3, 	/* COL_YELLOW = 3*/
-	COL_BLACK=4   	/* COL_BLACK = 4*/
+	COL_YELLOW=3, 		/* COL_YELLOW = 3*/
+	COL_BLACK=4   		/* COL_BLACK = 4*/
 	 };
 ```
 
@@ -230,6 +230,7 @@ typedef struct pkt
 	float x;
 	float y;	
 } punkt;
+
 punkt wczytaj_punkt();
 void wyswietl_punkt(punkt point);
 
@@ -238,6 +239,7 @@ int main() {
 	wyswietl_punkt(point);	
 	return 0;
 }
+
 punkt wczytaj_punkt()
 {
 	punkt tmp;
@@ -248,6 +250,7 @@ punkt wczytaj_punkt()
 	return tmp;
 	
 }
+
 void wyswietl_punkt(punkt pkt)
 {
 	printf("(%5.2f,%5.2f)",pkt.x,pkt.y); 
@@ -276,6 +279,7 @@ int main() {
 	wyswietl_punkt(point);	
 	return 0;
 }
+
 punkt wczytaj_punkt()
 {
 	punkt tmp;
@@ -286,6 +290,7 @@ punkt wczytaj_punkt()
 	return tmp;
 	
 }
+
 void wyswietl_punkt(punkt pkt)
 {
 	printf("(%5.2f,%5.2f)",pkt.x,pkt.y); 
