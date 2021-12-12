@@ -300,6 +300,13 @@ void wyswietl_punkt(punkt pkt)
 Analogicznie można definiować wszystkie poznane typy zmiennych (nawet te proste).
 
 ## **Zadania do samodzielnego wykonania**
+1. Stwórz projekt obejmujący:
+	1. Stwórz następujące struktury: piłkarz, drużyna, mecz, liga, które pozwoliłyby stworzyć funkcjonalny system ewidencji ligii.
+	2. Do struktur powyżej dodaj kategorie piłkarza odnośnie do wieku: TRAMPKARZ, JUNIOR, SENIOR w zależności od wieku. Uzyj typu wyliczeniowego.
+	3. Rozwiń program aby móc ewidencjonować piłkarzy przy pomocy menu (dodaj, edytuj, usuń).
+	4. Rozwiń program aby móc ewidencjonować drużyny przy pomocy menu (dodaj piłkarza, usuń piłkarza)
+	5. Rozwiń program aby móc tworzyć mecze pomiędzy drużynami i je rozsrzygać (utwórz mecz, rozstrzygnij mecz, odwołaj mecz). Użyj  typu wyliczeniowego (WYGRANA, PRZEGRANA, REMIS)
+	6. Rozwiń program aby móc tworzyć ligi, z losowaniem meczy oraz wyświetlaniem wyników. Zadbaj o to aby w lidze mogli grać tylko zawodnicy z danej grupy wiekowej.
 
 
 ***
