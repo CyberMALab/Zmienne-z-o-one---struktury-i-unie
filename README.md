@@ -310,6 +310,6 @@ Analogicznie można definiować wszystkie poznane typy zmiennych (nawet te prost
 
 
 ***
-[Poprzednia część](https://github.com/CyberMALab/Tablice-znakow.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Comming-Soon.git)
+[Poprzednia część](https://github.com/CyberMALab/Tablice-znakow.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Wprowadzenie-do-wskaznikow.git)
 ***
 &copy; Cyberspace Modelling and Analysis Laboratory
