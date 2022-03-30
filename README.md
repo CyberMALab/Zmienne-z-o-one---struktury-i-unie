@@ -68,7 +68,7 @@ struct punkt point{3.23,5.33};
 ## **Unie**
 Unia, to zmienna przechowujące pojedynczy obiekt pamięci, którego typ może ulec zmianie w trakcie działania programu. Aby zadeklarować unię, należy wykonać analogiczne kroki co w przy tworzeniu struktury. To samo jeśli chodzi o deklaracje zmiennej złożonej *union*. Jedyną różnicą i to znaczną, jest użycie zmiennej *union*.  Zmienna taka może przechowywać jednocześnie dane o tylko jednej z zadeklarowanych wartości. Bardzo dobrze prezentuje to przykład (11.2), w którym można zauważyć, że po zmianie parametru zmiennoprzecinkowego *f\_val* wartość *i\_val* uległa zmianie. Dzieje się tak, ponieważ zmienna *f\_val* i *i\_val* korzysta z tej samej przestrzeni pamięci.
 
-*Przykład (11.2) zmiana parametrów składowych unii*
+*Przykład (11.3) zmiana parametrów składowych unii*
 
 ```
 #include <stdio.h>
@@ -107,7 +107,7 @@ int main()
 ## **Własne typy wyliczeniowe *enum***
 Typ wyliczeniowy, wykorzystywany jest do ułatwienia czytania  kodu. W praktyce zmienne typu *enum* są zmiennymi całkowitoliczbowymi (*int*). Jedyną różnicą jest to, że przypisujemy odpowiedni identyfikator do liczby (coś podobnego jak zbudowane są znaki char w ASCII). Pozwala nam to łatwiej poruszać się po własnym kodzie, w przypadku tworzenia dużych programów. Aby zadeklarować własny typ wyliczeniowy zaczynamy od słowa kluczowego *enum.* Następnie nadajemy identyfikator typu oraz jego argumenty w nawiasie klamrowym. Wszystko zamykamy średnikiem.
 
-*Przykład (11.3) własny typ wyliczeniowy – kolory*
+*Przykład (11.4) własny typ wyliczeniowy – kolory*
 
 ```
 #include <stdio.h>
@@ -126,7 +126,7 @@ Przykład (11.3) pokazuje w jaki sposób stworzyć własny typ wyliczeniowy oraz
 
 *Przykłady – różna deklaracja typów wyliczeniowych*
 
-*(11.4)*  
+*(11.5)*  
 
 ```
 /* ten sam efekt co w przykładzie 11.3 */
@@ -139,7 +139,7 @@ enum COLORS{
 	 };
 ```
 
-*(11.5)*
+*(11.6)*
 
 ```
 enum COLORS{
@@ -153,9 +153,8 @@ enum COLORS{
 
 Teraz przykład praktyczny. Bowiem zmienne wyliczeniowe można używać w instrukcji *if case* i wielu innych w których dopuszczone jest użycie zmiennej całkowitoliczbowej. Przyjrzyjmy się przykładom dwóch kodów realizujących ten sam problem.
 
-*Przykład (11.6) kod z typem wyliczeniowym vs bez typu wyliczeniowego*
+*Przykład (11.7.1) kod z typem wyliczeniowym*
 
-*Z typem wyliczeniowym*
 
 ```
 enum COLORS{COL_WHITE,COL_RED,COL_BLUE, COL_YELLOW, COL_BLACK };
@@ -183,7 +182,7 @@ int main()
 }
 ```
 
-*bez typu wyliczeniowego*
+*Przykład (11.7.2) kod bez typu wyliczeniowego*
 
 ```
 struct rectangle
@@ -219,7 +218,7 @@ A teraz pora określić który kod łatwiej przeczytać z poziomu programisty.
 ## **Definiowanie przy użyciu *typedef***
 Narzędzie definiowane przez słowo kluczowe *typedef* daje nam kolejne możliwości. Pozwala ono zdefiniować nam identyfikator do własnego typu danych. Co za tym idzie możemy szybciej tworzyć zmienne zdefiniowanych przez nas typów *struct union* i *enum* (oraz tak naprawdę wszystkich typów danych. Pozwala on nam zdefiniować własne słowo kluczowe odpowiedzialne za typ danych. Jak można zauważyć w poniższym przykładzie (11.7) wszystkie zmienne złożone *struct* nie wymagają już zapisu „**struct** pkt” a wystarczy jedynie “punkt”. 
 
-*Przykład (11.7) program z 11.1 z użyciem typedef*
+*Przykład (11.8.1) program z 11.1 z użyciem typedef*
 
 ```
 #include <stdio.h>
@@ -258,7 +257,7 @@ void wyswietl_punkt(punkt pkt)
 }
 ```
 
-*lub w inny sposób*
+*Przykład (11.8.2) program z 11.1 z użyciem typedef w inny sposób*
 
 ```
 #include <stdio.h>
